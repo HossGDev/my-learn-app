@@ -1,10 +1,10 @@
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-function Provider({
+function AppThemeProvider({
   children,
   ...props
 }: React.ComponentProps<typeof NextThemesProvider>) {
   return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
 }
 
-export default Provider;
+export default AppThemeProvider;
