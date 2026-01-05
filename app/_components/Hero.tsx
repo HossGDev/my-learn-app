@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="w-full relative h-screen overflow-hidden">
       <Image
-        src="/hero.Gif"
+        src="/hero.GIF"
         alt="hero"
         width={1000}
         height={1000}
