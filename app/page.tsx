@@ -1,15 +1,18 @@
-import { Button } from "@/components/ui/button";
+import Header from "./_components/Header";
+import Hero from "./_components/Hero";
 
-/**
- * Default page of application
+/*
+  Default page of application
  * @returns
- */
+*/
 
 export default function Home() {
   return (
-    <div>
-      <h1 className="font-game text-2xl">Welcome to Home Page</h1>
-      <Button>Click Me</Button>
+    <div className="flex flex-col items-center">
+      {/* Header / Navbar */}
+      <Header />
+      {/* Hero Section */}
+      <Hero />
     </div>
   );
 }
