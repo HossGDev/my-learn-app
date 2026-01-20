@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function EnrolledCourses() {
   const [enrolledCourses, setEnrolledCourses] = useState([]);
@@ -13,9 +14,11 @@ function EnrolledCourses() {
         <div className="flex flex-col items-center gap-3 p-7 border rounded-2xl bg-zinc-900">
           <Image src={"/books.png"} alt="books" width={90} height={90} />
           <h2 className="text-xl font-game">No enrolled courses yet</h2>
-          <Button variant="pixel" className="font-game text-lg" size="lg">
-            See All Courses
-          </Button>
+          <Link href="/courses">
+            <Button variant="pixel" className="font-game text-lg" size="lg">
+              See All Courses
+            </Button>
+          </Link>
         </div>
       ) : (
         <div>List of enrolled courses</div>
